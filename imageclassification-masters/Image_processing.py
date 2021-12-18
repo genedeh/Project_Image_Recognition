@@ -12,7 +12,7 @@ from Image_clasification import ImageClassification
 
 class ImageProcessing(FolderFileProcessing, FaceDetection, ImageClassification):
     get_current_working_directory = os.getcwd()
-    imagesPath = f'{get_current_working_directory}/pictures/'
+    imagesPath = f'{get_current_working_directory}/437/'
     reprocessPath = f'{get_current_working_directory}/Reports/reprocess_images/'
     imageReport = f'{get_current_working_directory}/Reports/'
     primaryFolders = ['good_images', 'face_in_background', 'no_human_face', 'defaced', 'not_sure', 'reprocess_images']
@@ -37,13 +37,11 @@ class ImageProcessing(FolderFileProcessing, FaceDetection, ImageClassification):
         enhanced_im = enhancer.enhance(num)
         enhanced_im.save("./sample.jpg")
 
-
-
     def initiate_threading(self):
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
             executor.submit(self.verifyReprocessingImages())
 
-    def verify_reprocessing_images(self, good=None, not_sure=None):
+    def verify_reprocessing_images(self, good=None, not_sure=None, another_face=None):
         start_time = time.time()
         print('----- INITIATE VERIFICATION OF NEED TO BE REPROCESSED IMAGES  ------\n')
         for root, directories, files in os.walk(self.reprocessPath, topdown=False):

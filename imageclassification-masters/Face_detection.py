@@ -84,9 +84,9 @@ class FaceDetection(ABC):
         pyplot.show()
         return img_result
 
-    ## THIS IS THE FIRST LEVEL Detection  =>>> THIS IS THE FIRST METHOD THAT THE IMAGE WOULD GO THROUGH
+    # THIS IS THE FIRST LEVEL Detection  =>>> THIS IS THE FIRST METHOD THAT THE IMAGE WOULD GO THROUGH
 
-    ## THIS IS THE SECOND LEVEL Detection  =>>> THIS IS THE SECOND METHOD THAT THE IMAGE WOULD GO THROUGH
+    # THIS IS THE SECOND LEVEL Detection  =>>> THIS IS THE SECOND METHOD THAT THE IMAGE WOULD GO THROUGH
 
     def detect_face_tensor_flow_2nd(self, img):
         img_result = list()

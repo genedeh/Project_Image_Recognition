@@ -60,7 +60,7 @@ class FolderFileProcessing(Directories):
     def create_good_images(self, root, path):
         if not self.check_directory(f'{self.image_report}good_images/{self.strip_root_folder(path)}'):
             self.create_directory(f'{self.image_report}good_images/{root}')
-        shutil.copy(path, f'{self.image_report}good_images/{self.strip_root_folder(path)}')
+        shutil.copy(path, f'{self.image_report}good_images/')
 
     def create_not_sure_images(self, root, path):
         if not self.check_directory(f'{self.image_report}not_sure/{self.strip_root_folder(path)}'):
