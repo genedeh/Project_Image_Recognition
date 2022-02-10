@@ -22,7 +22,7 @@ cycler==0.10.0
 debugpy==1.4.1
 decorator==5.0.9
 distlib==0.3.2
-Django==3.2.3
+Django==3.2.12
 django-countries==7.2.1
 django-crispy-forms==1.11.2
 django-debug-toolbar==3.2.2
