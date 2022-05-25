@@ -89,7 +89,7 @@ PyAudio @ file:///C:/Users/KidChaos/pipwin/PyAudio-0.2.11-cp39-cp39-win_amd64.wh
 pycodestyle==2.7.0
 Pygments==2.10.0
 pyjsparser==2.7.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.10.2
 pyparsing==2.4.7
 PyPDF2==1.26.0
